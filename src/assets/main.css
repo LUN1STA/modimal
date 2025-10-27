@@ -89,11 +89,13 @@ h6 {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
+  height: 48px;
 }
 .button--sm {
   font-size: 14px;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
+  height: 40px;
 }
 
 /* overline */
@@ -106,4 +108,123 @@ h6 {
   font-size: 12px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------------Buttons----------------------- */
+.button {
+  padding: 0 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* -------Light background------- */
+/* fill */
+.button--light--fill {
+  background-color: rgba(90, 109, 87, 1);
+  color: white;
+  border: none;
+}
+.button--light--fill:hover {
+  background-color: rgba(64, 78, 62, 1);
+}
+.button--light--fill:active {
+  background-color: rgba(52, 62, 50, 1);
+}
+.button--light--fill:disabled {
+  background-color: rgba(203, 203, 203, 1);
+  color: rgba(173, 173, 173, 1);
+}
+
+/* stroke */
+.button--light--stroke {
+  background: none;
+  color: rgba(90, 109, 87, 1);
+  border: 1px solid rgba(90, 109, 87, 1);
+}
+.button--light--stroke:hover {
+  border-color: rgba(64, 78, 62, 1);
+  color: rgba(64, 78, 62, 1);
+}
+.button--light--stroke:active {
+  border-color: rgba(52, 62, 50, 1);
+  color: rgba(52, 62, 50, 1);
+}
+.button--light--stroke:disabled {
+  background: rgba(203, 203, 203, 1);
+  color: rgba(173, 173, 173, 1);
+  border: none;
+}
+
+/* text */
+.button--light--text {
+  background: none;
+  color: rgba(90, 109, 87, 1);
+  border: none;
+}
+.button--light--text:hover {
+  color: rgba(64, 78, 62, 1);
+}
+.button--light--text:active {
+  color: rgba(52, 62, 50, 1);
+}
+.button--light--text:disabled {
+  background: rgba(203, 203, 203, 1);
+  color: rgba(173, 173, 173, 1);
+}
+
+/* -------Dark background------- */
+/* fill */
+.button--dark--fill {
+  background-color: white;
+  color: black;
+  border: none;
+}
+.button--dark--fill:hover {
+  background-color: rgba(237, 237, 237, 1);
+}
+.button--dark--fill:active {
+  background-color: rgba(223, 223, 223, 1);
+}
+.button--dark--fill:disabled {
+  background-color: rgba(96, 96, 96, 1);
+  color: rgba(173, 173, 173, 1);
+}
+
+/* stroke */
+.button--dark--stroke {
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+.button--dark--stroke:hover {
+  border-color: rgba(237, 237, 237, 1);
+  color: rgba(237, 237, 237, 1);
+  -webkit-text-stroke: 0.5px black;
+}
+.button--dark--stroke:active {
+  border-color: rgba(223, 223, 223, 1);
+  color: rgba(223, 223, 223, 1);
+  -webkit-text-stroke: rgba(223, 223, 223, 1);
+}
+.button--dark--stroke:disabled {
+  background-color: rgba(96, 96, 96, 1);
+  color: rgba(173, 173, 173, 1);
+  border: none;
+}
+
+/* text */
+.button--dark--text {
+  background: none;
+  color: white;
+  border: none;
+}
+.button--dark--text:hover {
+  color: rgba(237, 237, 237, 1);
+}
+.button--dark--text:active {
+  color: rgbargba(223, 223, 223, 1);
+}
+.button--dark--text:disabled {
+  background-color: rgba(96, 96, 96, 1);
+  color: rgba(173, 173, 173, 1);
 }
