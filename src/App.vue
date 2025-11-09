@@ -7,7 +7,7 @@ import Header from './components/Header.vue'
   <div class="main-image">
     <img src="/public/photos/hero.svg" alt="" />
     <div class="main-image__button">
-      <p>Elegance in simplicity, Earth’s harmony</p>
+      <p>Elegance In Simplicity, Earth’s Harmony</p>
       <button class="button--sm button button--dark--fill">New In</button>
     </div>
   </div>
@@ -15,27 +15,37 @@ import Header from './components/Header.vue'
 
 <style scoped>
 .main-image {
+  height: calc(100vw * 5 / 12);
+}
+.main-image,
+.main-image__button {
+  grid-column: 1/-1;
+  display: inherit;
+  grid-template-columns: subgrid;
+  gap: inherit;
   position: relative;
-  display: inline-block;
-  width: 100%;
 }
 .main-image img {
-  width: 100%;
+  position: absolute;
+  width: 100vw;
+  transform: translateX(calc(-1 * (100vw - 1224px) / 2));
 }
 .main-image__button {
-  position: absolute;
-  top: 50%;
-  left: 120px;
+  margin-top: calc((100vw * 5 / 12) / 2);
+  grid-auto-rows: max-content;
 }
 .main-image__button p {
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans Italic', sans-serif;
   font-size: 34px;
-  font-style: italic;
-  width: 350px;
-  text-align: bottom;
+  line-height: 180%;
+  text-align: start;
+  grid-column: 1/4;
+  margin: 0;
+  height: fit-content;
 }
 .main-image__button button {
-  width: 184px;
+  margin-top: 27px;
+  grid-column: 1/3;
 }
 </style>

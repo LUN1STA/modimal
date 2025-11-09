@@ -38,25 +38,30 @@ export default {}
 
 <style scoped>
 /* selectors */
+header {
+  grid-column: 1/-1;
+}
 ul {
   list-style: none;
-  width: 100%;
 }
 
 /* classes */
 .header-block {
-  padding: 0 120px;
+  grid-column: 1/-1;
+  display: inherit;
+  grid-template-columns: subgrid;
+  gap: inherit;
   height: 80px;
+  margin-top: 30px;
   align-items: center;
-  display: grid;
-  grid-template-columns: 2fr 1fr 6fr 1fr 2fr;
 }
 .header-block:has(+ #logo) {
   justify-items: center;
 }
 .header-block-pages {
-  grid-column: 3 / 4;
-  padding: 0 4px;
+  grid-column: 4 / 10;
+  padding: 0;
+  margin: 0 -15px;
 }
 .header-block-pages ul {
   padding: 0;
@@ -69,7 +74,7 @@ ul {
   text-decoration: none;
 }
 .header-block-icons {
-  grid-column: 5;
+  grid-column: 11/13;
   padding: 0 8px;
 }
 .header-block-icons ul {
@@ -82,16 +87,19 @@ ul {
 /* id */
 #green__line {
   background: rgba(90, 109, 87, 1);
-  width: 100%;
+  position: absolute;
+  left: 0;
+  width: 100vw;
   height: 30px;
   text-align: center;
   color: white;
   align-content: center;
 }
 #logo {
+  display: inherit;
   align-content: center;
   padding: 0;
-  height: 100%;
+  grid-column: 1/3;
 }
 #logo img {
   height: 46px;

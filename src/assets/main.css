@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'Gill Sans Italic';
+  src: url('src/assets/GillSansC-Italic.woff2') format('woff2');
+}
 
 body {
   width: 100%;
@@ -8,6 +12,14 @@ body {
   grid-template-columns: repeat(12, 80px);
   column-gap: 24px;
   justify-content: center;
+  align-content: stretch;
+}
+#app,
+#app > * {
+  grid-column: 1/-1;
+  display: inherit;
+  grid-template-columns: subgrid;
+  gap: inherit;
 }
 
 /* ---------------------Text style----------------------- */
