@@ -1,3 +1,5 @@
+<script></script>
+
 <template>
   <header>
     <div id="green__line" class="overline--sm">Enjoy Free Shipping On All Orders</div>
@@ -31,10 +33,6 @@
     </div>
   </header>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style scoped>
 /* selectors */

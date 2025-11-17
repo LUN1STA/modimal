@@ -1,5 +1,13 @@
-<script setup>
+<script>
 import Header from './components/Header.vue'
+import ProductList from './components/ProductList.vue'
+
+export default {
+  components: {
+    Header,
+    ProductList,
+  },
+}
 </script>
 
 <template>
@@ -11,6 +19,7 @@ import Header from './components/Header.vue'
       <button class="button--sm button button--dark--fill">New In</button>
     </div>
   </div>
+  <ProductList class="product-list" />
 </template>
 
 <style scoped>
@@ -47,5 +56,8 @@ import Header from './components/Header.vue'
 .main-image__button button {
   margin-top: 27px;
   grid-column: 1/3;
+}
+.product-list {
+  grid-column: 1/-1;
 }
 </style>
